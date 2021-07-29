@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 from scipy.spatial import distance as dist
 
-import wound_analysis.api.constants as k
 import copy
 
 from imutils import perspective
@@ -27,7 +26,3 @@ def sharpen(image):
 
 def blur(image):
     return cv2.GaussianBlur(image, (3, 3), 0)
-
-
-if __name__ == "__main__":
-    print("running as main file")
